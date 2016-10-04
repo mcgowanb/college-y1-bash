@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- JavaScript code is typically event driven, that is, it will not execute until-->
+    <!-- the user performs some action-->
+    <!-- Instead of putting JavaScript in our HTML page, we can reference it from another file or files -->
+    <script src="script.js">
+
+    </script>
+</head>
+<body>
+</body>
+<!--In order for JavaScript to access the textbox, we need to give it a unique id attribute -->
+Number 1: <select id="num1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+</select>
+<br/>
+Number 1: <select id="num2">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+</select>
+<br/>
+
+<!-- Create a button with the value 'add'. When the button is clicked, the browser will look for a function called addNumbers()-->
+<!-- and will execute it if the function exists. That is, the code will only be called when the button's click event-->
+<!-- has been activated-->
+<input type="button" value="+" onClick="process(this.value)"/>
+<input type="button" value="-" onClick="process(this.value)"/>
+<input type="button" value="*" onClick="process(this.value)"/>
+<input type="button" value="/" onClick="process(this.value)"/>
+<br/>
+<br/>
+<label>Answer:</label>
+<label id="result"></label>
+</html>
